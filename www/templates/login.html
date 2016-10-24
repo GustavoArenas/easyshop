@@ -1,0 +1,27 @@
+<ion-view view-title="Login" name="login-view">
+    <ion-content scroll="false">
+        <section class="login-container">
+            <div class="col header text-center">
+                <img src="./img/person.jpg" class="logo" />
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+              <input type="text" placeholder="Usuario" ng-model="data.username">
+          </label>
+                <label class="item item-input">
+              <input type="password" placeholder="Clave" ng-model="data.password">
+          </label>
+                <label>
+                  <button class="button button-positive " ng-click="login()">Ingresar<i class="icon "></i></button>
+          </label>
+            </div>
+            <div class="col button-row text-center">
+                <img src="./img/facebook-button.jpg" />
+                <img src="./img/gmail-buttom.jpg" />
+            </div>
+            <div class="col text-center">
+                Aún no tienes una cuenta? <strong><a href = "#">Registrate ahora!</a></strong>
+            </div>
+        </section>
+    </ion-content>
+</ion-view>

@@ -1,18 +1,14 @@
 <ion-view view-title="Novedades">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="producto in novedades" href="#/app/newsdetail/{{producto.codigo}}">
-        {{producto.descripcion}}
-      </ion-item>
-    </ion-list>
+    <div class="card" ng-repeat="producto in novedades">
+      <div class="item  item-avatar">
+        <img src="{{producto.imgprod}}">
+        <a style="text-decoration: none; color: black;" href="#/app/newsdetail/{{producto.codigo}}">{{producto.titulo}}</a>
+        <p>{{producto.descripcion}}</p>
+        <i class="item item-icon-right dark " ng-click="shopping(producto.codigo);">
+          <i class="icon ion-ios-cart"></i>
+        </i>
+      </div>
+    </div>
   </ion-content>
-<!--  <ion-footer-bar align-title="left" class="bar-positive">-->
-<!--  <div class="buttons">-->
-<!--    <button class="button">Left Button</button>-->
-<!--  </div>-->
-<!--  <h1 class="title">{{bartittle}}</h1>-->
-<!--  <div class="buttons" ng-click="doSomething()">-->
-<!--    <button class="button">Right Button</button>-->
-<!--  </div>-->
-<!--</ion-footer-bar>-->
 </ion-view>

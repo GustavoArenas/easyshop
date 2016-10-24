@@ -51,7 +51,7 @@ p {
 /* Menu */
 
 .menu .bar.bar-header.expanded {
-    background-image: url('../img/material-graphite.jpg');
+    background-image: url('../img/fast.jpg');
     background-size: 120%;
     background-position: 0%;
     transition: all .5s ease-in-out;
@@ -210,4 +210,12 @@ p {
 }
 .platform-android .popover{
 margin-top:10px;
+
+}
+
+.item .icon .icon-badge {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  font-size: 8px;
 }

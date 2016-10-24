@@ -3,7 +3,11 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
+
+
 var app = angular.module('starter', ['ionic', 'ionic-material', 'starter.services']);
+
+
 
 app.run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -19,7 +23,8 @@ app.run(function ($ionicPlatform) {
     });
 })
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider,  $ionicConfigProvider) {
+    $ionicConfigProvider.tabs.position('bottom'); // force tabs to bottom
     $stateProvider
 
     .state('app', {
@@ -98,6 +103,27 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    
+    .state('app.shoppinglist', {
+        url: '/shoppinglist',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/shoppinglist.html',
+                controller: 'shoppinglistCtrl'
+            }
+        }
+    })
+    
+     .state('app.login', {
+        url: '/login',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/login.html',
+                controller: 'loginCtrl'
+            }
+        }
+    })
+    
     ;
 
     // if none of the above states are matched, use this as the fallback

@@ -2,23 +2,33 @@
   "productos": [
     {
       "codigo": "0000000001",
-      "descripcion": "Tomate"
+      "titulo": "Galletas Toddy-Chispas",
+      "descripcion": "Muy ricas",
+      "imgprod":"https://jumbo.com.ar/JumboComprasArchivos/Archivos/361858.jpg"
     },
     {
       "codigo": "0000000002",
-      "descripcion": "Neumáticos"
+      "titulo": "Galletitas Pepitos White",
+      "descripcion": "Nueva blancas",
+      "imgprod":"https://jumbo.com.ar/JumboComprasArchivos/Archivos/361787.jpg"
     },
     {
       "codigo": "0000000003",
-      "descripcion": "Oso Peluche"
+      "titulo": "Minitapitas Soriano ",
+      "descripcion": "Minio pero potentes",
+      "imgprod":"https://jumbo.com.ar/JumboComprasArchivos/Archivos/282698.jpg"
     },
     {
-      "codigo": "0000000004",
-      "descripcion": "Cuadril"
+      "codigo":"0000000004",
+      "titulo":"Galletitas Rumba",
+      "descripcion": "Bailate una Rumba",
+      "imgprod":"https://jumbo.com.ar/JumboComprasArchivos/Archivos/121312.jpg"
     },
       {
-      "codigo": "0000000005",
-      "descripcion": "Cola"
+       "codigo": "0000000005",
+      "titulo": "Galletitas Tentacion Mousse",
+      "descripcion": "La tentacion de todos",
+      "imgprod":"https://jumbo.com.ar/JumboComprasArchivos/Archivos/202153.jpg"
     }
   ]
 }
